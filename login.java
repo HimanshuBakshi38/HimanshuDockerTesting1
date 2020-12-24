@@ -249,9 +249,6 @@ driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div[1]/div[2]/d
 			
 			
 			
-			
-			
-			
 					
 			
 	}

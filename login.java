@@ -251,7 +251,7 @@ public class login {
 			
 			driver.findElement(By.xpath("//*[@id=\"acceptPitchPopUp\"]/div/div/div[3]/div[2]/button")).click();
 			System.out.println("Accept pop up");
-			System.out.println("Accept pop up");
+			
 			
 	}
 	

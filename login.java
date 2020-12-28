@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.ClickAction;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -240,22 +241,16 @@ public class login {
 			
 			driver.findElement(By.name("outline")).sendKeys("Synopsis");
 			System.out.println("synopsis");
+		
 			
-			Thread.sleep(2000);
-		WebElement submit = 	driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div/div[2]/div[2]/div/div"));
-			submit.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div/div[2]/div[2]/div/div/div[2]/button")).click();
-		System.out.println("Submit buttion");
-			
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div/div[2]/div[1]/div/div/div[3]/div[2]/button")).click();
-			System.out.println("2nd submit button");
-			
+			driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div/div[2]/div[2]/div/div/div[2]/button")).click();
+			System.out.println("2nd step button");
 
+			driver.findElement(By.xpath("//*[@id=\"root\"]/div[3]/div/div[2]/div[1]/div[2]/div/div/div[4]/div/div/div[2]/div[2]/div/div/div[2]/button")).click();
+			System.out.println("3rd step submit buttion");
 			
-			
-			
-			
-					
+			driver.findElement(By.xpath("//*[@id=\"acceptPitchPopUp\"]/div/div/div[3]/div[2]/button")).click();
+			System.out.println("Accept pop up");
 			
 	}
 	
